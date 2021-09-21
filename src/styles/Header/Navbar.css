@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  padding-right: 8px;
+}
+
+.orange__button {
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 3px 6px;
+  margin-left: 6px;
+  letter-spacing: 0.5px;
+}
+
+.visible__intern {
+  display: inline-flex;
+  position: absolute;
+  top: 72px;
+  background-color: white;
+  width: 260px;
+}
+
+.disable__intern {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .navbar {
+    display: inline-block;
+  }
+}

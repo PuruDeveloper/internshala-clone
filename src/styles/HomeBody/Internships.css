@@ -1,0 +1,53 @@
+.internships {
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.city:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px -1px #333;
+}
+
+.center {
+  text-align: center;
+}
+
+.orange_button {
+  position: relative;
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.orange_button h2 {
+  position: relative;
+  top: -4px;
+}
+
+.images__fresher {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+@media (max-width: 1224px) {
+  .images {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 560px) {
+  .images__fresher {
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,122 @@
+.header__width {
+  width: 100%;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 15%);
+}
+.visible__at__890 {
+  display: none;
+}
+.header {
+  display: flex;
+  max-width: 1224px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 72px;
+}
+.header a {
+  color: black;
+}
+.header a:hover {
+  color: blue;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+}
+.header__left > img {
+  height: 70px;
+  width: 180px;
+}
+
+button {
+  border: none;
+  outline: none;
+  margin: 0 16px;
+  max-height: 40px;
+}
+
+.white__button {
+  background: #fff;
+  border: 1px solid #008bdc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #008bdc;
+  font-weight: bold;
+  min-width: 70px;
+  padding: 8px;
+}
+
+.blue__button {
+  background: #008bdc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #008bdc;
+  color: white;
+  font-weight: bold;
+  min-width: 70px;
+  padding: 8px;
+}
+
+.visible__sidebar {
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 400px;
+  background-color: white;
+  z-index: 9999;
+  padding: 12px;
+}
+.visible__sidebar a {
+  color: black;
+}
+.visible__sidebar a:hover {
+  color: blue;
+}
+.visible__sidebar button {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  background-color: white;
+}
+.visible__sidebar button i {
+  font-size: 2rem;
+}
+
+.disable__sidebar {
+  display: none;
+}
+
+@media (max-width: 890px) {
+  .visible__at__890 {
+    display: block;
+  }
+  .disable__at__890 {
+    display: none;
+  }
+  .header__left button {
+    font-size: 1.5rem;
+    position: relative;
+    top: 18px;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 500px) {
+  .visible__sidebar {
+    width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .visible__sidebar {
+    width: 260px;
+  }
+}
